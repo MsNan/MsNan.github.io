@@ -42,20 +42,13 @@ $(function(){
 
 	//历史记录功能实现
 	$("#ss1").bind("search", function(){
-		var has = false;
-		$(".ls li").each(function(){
-			if(this.innerHTML ==$("#ss1").val()){
-				has = true;
-			}
-		});
-		if(!has){
-			$(".ls").append("<li>"+$("#ss1").val()+"</li>");
-		}
+		append();
 	})
 	// $(".imgss").click(function(){
 	// 	append();
 	// })
 	function  append(){
+		$(".search_ls").show();
 		var has = false;
 		$(".ls li").each(function(){
 			if(this.innerHTML ==$("#ss1").val()){
@@ -65,6 +58,13 @@ $(function(){
 		if(!has){
 			$(".ls").append("<li>"+$("#ss1").val()+"</li>");
 		}
+	}
+	// 历史记录显示隐藏
+	if($(".ls > li").length > 0){
+		$(".search_ls").show();
+	}
+	else{
+		$(".search_ls").hide();
 	}
 
 
