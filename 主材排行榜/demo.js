@@ -37,12 +37,20 @@ $(function(){
 
 	// 历史记录搜索
 	$("li").click(function(){
-		$(".ss1").val($(this).text());
+		$("#ss1").val($(this).text());
 	})
 
 	//历史记录功能实现
 	$("#ss1").bind("search", function(){
-		append();
+		var has = false;
+		$(".ls li").each(function(){
+			if(this.innerHTML ==$("#ss1").val()){
+				has = true;
+			}
+		});
+		if(!has){
+			$(".ls").append("<li>"+$("#ss1").val()+"</li>");
+		}
 	})
 	// $(".imgss").click(function(){
 	// 	append();
@@ -50,18 +58,18 @@ $(function(){
 	function  append(){
 		var has = false;
 		$(".ls li").each(function(){
-			if(this.innerHTML ==$(".ss1").val()){
+			if(this.innerHTML ==$("#ss1").val()){
 				has = true;
 			}
 		});
 		if(!has){
-			$(".ls").append("<li>"+$(".ss1").val()+"</li>");
+			$(".ls").append("<li>"+$("#ss1").val()+"</li>");
 		}
 	}
 
 
 	//text内容清空按钮
-	$(".ss1").on('keyup',function(){
+	$("#ss1").on('keyup',function(){
 		var words = $(this).val();
 		console.log(words);
 		if(words != ''){
@@ -73,7 +81,7 @@ $(function(){
 		
 	})
 	$(".clear").click(function(){
-		$(".ss1").val("");
+		$("#ss1").val("");
 		$(".clear").css("display","none");
 	})
 })
