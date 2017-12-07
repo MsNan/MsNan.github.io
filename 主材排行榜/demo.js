@@ -42,11 +42,11 @@ $(function(){
 
 	//历史记录功能实现
 	$("#ss1").bind("search", function(){
-		alert(1);
-	})
-	$(".imgss").click(function(){
 		append();
 	})
+	// $(".imgss").click(function(){
+	// 	append();
+	// })
 	function  append(){
 		var has = false;
 		$(".ls li").each(function(){
