@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索</title>
+	<link rel="stylesheet" href="./H-ui.reset.css">
+	<script src="rems.js"></script>
+	<style>
+		title{
+			text-align: left;
+		}
+		.head{
+			text-align: center;
+		}
+		.ss{
+			width: 17.25rem;
+			height: 1.5rem;
+			background-color: #f2f2f2;
+			border-radius: 0.75rem;
+			font-family: PingFang-SC-Regular;
+			font-size: 0.65rem;
+			text-indent: 1.725rem;
+			margin-top: 0.5rem;
+			border: 0;
+		}
+		.head img{
+			position: absolute;
+			width: 0.675rem;
+			height: 0.625rem;
+			margin-left: 0.7rem;
+			margin-top: 0.925rem;
+		}
+		hr{
+			width: 100%;
+			border: solid 1px #f2f2f2;
+			margin-top: 0.5rem;
+		}
+		
+		.search_re,.search_ls{
+			width: 100%;
+			height: auto;
+		}
+		h3 {
+			font-family: PingFang-SC-Medium;
+			font-size: 0.65rem;
+			line-height: 2rem;
+			color: #121212;
+			margin-left: 0.75rem;
+			clear: both;
+		}
+		ul{
+			margin-left: 0.75rem;
+		}
+		ul li{
+			font-family: PingFang-SC-Medium;
+			font-size: 0.65rem;
+			line-height: 1.5rem;
+			color: #121212;
+			float: left;
+			background: #f5f5f5;
+			border-radius: 0.75rem;
+			padding: 0 1rem;
+			border: 0;
+			text-align: center;
+			margin-right: 0.4rem;
+			max-width: 5rem;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    display: inline-block;
+		    margin-bottom: 0.25rem;
+		}
+		.search_ls img{
+			float: right;
+			width: 0.75rem;
+			height: 0.7rem;
+			margin-top: -1.2rem;
+			margin-right: 0.75rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<img src="./images/ss.png" alt="">
+		<input class="ss" type="text" placeholder="搜索主材品牌/品类">
+	</div>
+	<hr>
+	<div class="search_all">
+		<div class="search_rs">
+			<h3>热门搜索</h3>
+			<ul>
+				<li>朗斯</li>
+				<li>欧派</li>
+				<li>马可波罗</li>
+				<li>bakeadsfk;lasdfdfasfads</li>
+			</ul>
+		</div>
+		<div class="search_ls">
+			<h3>搜索历史</h3>
+			<img src="./images/del.png" alt="">
+			<ul>
+				<li>朗斯</li>
+				<li>欧派</li>
+				<li>索菲亚</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
