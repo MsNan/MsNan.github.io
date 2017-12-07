@@ -59,7 +59,15 @@ $(function(){
 
 	//text内容清空按钮
 	$(".ss1").on('keyup',function(){
-		$(".clear").show();
+		var words = $(this).val();
+		console.log(words);
+		if(words != ''){
+			$(".clear").show();
+		}
+		else{
+			$(".clear").hide();
+		}
+		
 	})
 	$(".clear").click(function(){
 		$(".ss1").val("");

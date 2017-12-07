@@ -80,16 +80,9 @@ hr{
 }
 
 /*搜索框清楚按钮*/
-.clear{
+.head1 .clear{
+	margin-left: 14.6rem;
 	display: none;
-	position: absolute;
-    border-radius: 1rem;
-    font-size: 1rem;
-    margin: 0 auto;
-    margin-left: -1.5rem;
-    margin-top: 0.3rem;
-    padding-bottom: 1rem;
-    z-index: 1000;
 }
 
 /*热搜榜和搜索历史记录*/
