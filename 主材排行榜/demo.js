@@ -58,13 +58,8 @@ $(function(){
 
 
 	//text内容清空按钮
-	$(".ss1").change(function(){
-		if($(".ss1").val != ""){
-			$(".clear").css("display","inline-block");
-		}
-		if($(".ss1").val ==''){
-			$(".clear").css("display","block");
-		}
+	$(".ss1").on('keyup',function(){
+		$(".clear").show();
 	})
 	$(".clear").click(function(){
 		$(".ss1").val("");
