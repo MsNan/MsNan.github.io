@@ -13,12 +13,6 @@ $(function(){
 		$(".footer").css("display","block");
 		$(".search_all").css("display","none");
 	})
-	// $(document).bind("click",function(e){
-	// 	var target = $(e.target);
-	// if(target.closest("#test").length == 0){
-	// $("#test").hide();
-	// }
-	// }) 
 	// 删除历史记录操作
 	$(".del").click(function(){
 		$(".del_all").css("display","block");
@@ -35,18 +29,12 @@ $(function(){
 		$(".search_ls").css("display","none");
 	})
 
-	// 历史记录搜索
-	$("li").click(function(){
-		$("#ss1").val($(this).text());
-	})
+	
 
 	//历史记录功能实现
 	$("#ss1").bind("search", function(){
 		append();
 	})
-	// $(".imgss").click(function(){
-	// 	append();
-	// })
 	function  append(){
 		$(".search_ls").show();
 		var has = false;
@@ -66,7 +54,10 @@ $(function(){
 	else{
 		$(".search_ls").hide();
 	}
-
+	// li插入input
+	$("ul").on('click','li',function(){
+		$("#ss1").val($(this).text());
+	})
 
 	//text内容清空按钮
 	$("#ss1").on('keyup',function(){
