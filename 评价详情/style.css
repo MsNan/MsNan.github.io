@@ -168,15 +168,16 @@ a:link{
 .yy{
 	float: right;
 	font-size: 0.55rem;
+	margin-top: 0.3rem;	
 }
 .yy a{
-	padding: 3px 2px;
+	padding: 3px 4px;
 	border: 0;
 	background: #f5721a;
 	color: #fff;
 	border-radius: 0.1rem;
 	font-size: 0.55rem;
-	line-height: 0.8rem;
+	line-height: 1rem;
 }
 .yy a:link{text-decoration: none;}
 
@@ -272,7 +273,7 @@ a:link{
 
 /*图片切换*/
 .full{
-	display: none;
+	visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -281,6 +282,25 @@ a:link{
 	background-color: rgba(0,0,0,.5);
 }
 .full .swiper-slide img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.swiper-slide{
+	text-align: center;
+	line-height: 50;
+}
+.mess{
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	position: fixed;
+	bottom: 0;
 	width: 100%;
-	height: auto;
+	padding: 4px 5px;
+	font-size: 0.7rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-inline-box;
+	-webkit-line-clamp:4;
+	-webkit-box-orient:vertical;
+	max-height: 5rem;
 }
