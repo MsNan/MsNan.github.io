@@ -1,3 +1,6 @@
+a:link{
+	text-decoration: none;
+}
 /*顶部样式*/
 .top{
 	width: 100%;
@@ -166,7 +169,7 @@
 	float: right;
 	font-size: 0.55rem;
 }
-.yy input{
+.yy a{
 	padding: 3px 2px;
 	border: 0;
 	background: #f5721a;
@@ -175,6 +178,7 @@
 	font-size: 0.55rem;
 	line-height: 0.8rem;
 }
+.yy a:link{text-decoration: none;}
 
 /*yh样式*/
 .ww{
