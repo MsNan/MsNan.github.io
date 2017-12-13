@@ -272,7 +272,8 @@ a:link{
 }
 
 /*图片切换*/
-.full{
+.swiper-container{
+	margin: 0 auto;
 	visibility: hidden;
 	position: fixed;
 	top: 0;
@@ -281,13 +282,9 @@ a:link{
 	height: 100%;
 	background-color: rgba(0,0,0,.5);
 }
-.full .swiper-slide img{
+.swiper-container .swiper-slide img{
 	max-width: 100%;
 	max-height: 100%;
-}
-.swiper-slide{
-	text-align: center;
-	line-height: 50;
 }
 .mess{
 	background: rgba(0,0,0,0.7);

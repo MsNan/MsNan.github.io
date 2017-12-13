@@ -2,7 +2,7 @@ $(function(){
 	var imglist = $(".pjnr img");
 	// console.log(imglist);
 	$(".pjnr").on("click","img",function(){
-		$(".full").css("visibility","visible");
+		$(".swiper-container").css("visibility","visible");
 		for(var i =0; i<imglist.length; i++){
 			$(".pjnr img:eq("+i+")").attr("src");
 			// console.log($(".pjnr img:eq("+i+")").attr("src"));
@@ -10,14 +10,17 @@ $(function(){
 			//功能未完成
 		}
 	});
-	$(".full").click(function(){
-		$(".full").css("visibility","hidden");
+	$(".swiper-container").click(function(){
+		$(".swiper-container").css("visibility","hidden");
 	})
 
-	var mySwiper = new Swiper('.full',{
-	effect : 'fade',
-	fade: {
-	  crossFade: false,
-	}
-	});
+	var mySwiper = new Swiper ('.swiper-container', {
+	  direction: 'horizontal',
+	  loop: false,
+	  
+	  // 如果需要分页器
+	  pagination: {
+	    el: '.swiper-pagination',
+	  }
+	})
 })

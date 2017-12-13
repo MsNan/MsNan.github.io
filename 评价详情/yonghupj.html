@@ -229,24 +229,4 @@
 		</div>
 	</div>
 </body>
-<script>
-	function hide(that,target,he,num){
-	    console.log( that.attr("long"))
-	    var height = target.height();
-	    if(that.attr("long")==undefined){
-	        target.css({"overflow":"visible"});
-	        target.animate({"height":he},200);
-	        that.find("img").attr("src","https://static.mitangtuan.com/static/image/html530/principal/cup.png");
-	        that.attr("long",1);
-	        console.log( that.attr("long"))
-	        console.log(that.find("img").attr("src"))
-	    }else{
-	        console.log( that.attr("long"))
-	        target.css({"overflow":"hidden"});
-	        target.animate({"height":num},200);
-	        that.find("img").attr("src","https://static.mitangtuan.com/static/image/html530/principal/cdown.png");
-	        that.removeAttr("long");
-	    }
-	}
-</script>
 </html>
