@@ -28,7 +28,7 @@
 
 
 /*-- Index-Page-Styling --*/
-body:before {
+/*body:before {
   content: ' ';
   text-align: center;
   position: fixed;
@@ -40,7 +40,7 @@ body:before {
   background: url("./images/background.png") center 0 no-repeat;
   background-size: cover;
 
-}
+}*/
 
 body {
     font-family: 'Roboto', sans-serif;
