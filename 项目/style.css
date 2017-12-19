@@ -221,15 +221,6 @@ li.twt {
     transition: .5s all;
 }
 
-.social-icons ul li a.hover span.icons {
-    transform: rotatey(360deg);
-    -webkit-transform: rotatey(360deg);
-    -o-transform: rotatey(360deg);
-    -moz-transform: rotatey(360deg);
-    -ms-transform: rotatey(360deg);
-    transition: .5s all;
-}
-
 input[type="text"], input[type="password"] {
     width: 93.4%;
     margin-bottom: 20px;
