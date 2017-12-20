@@ -28,7 +28,7 @@
 
 
 /*-- Index-Page-Styling --*/
-/*body:before {
+body:before {
   content: ' ';
   text-align: center;
   position: fixed;
@@ -39,8 +39,7 @@
   left: 0;
   background: url("./images/background.png") center 0 no-repeat;
   background-size: cover;
-
-}*/
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -212,14 +211,14 @@ li.twt {
     background-size: 100%;
 }
 
-.social-icons ul li a:hover span.icons {
+/*.social-icons ul li a:hover span.icons {
     transform: rotatey(360deg);
     -webkit-transform: rotatey(360deg);
     -o-transform: rotatey(360deg);
     -moz-transform: rotatey(360deg);
     -ms-transform: rotatey(360deg);
     transition: .5s all;
-}
+}*/
 
 input[type="text"], input[type="password"] {
     width: 93.4%;
