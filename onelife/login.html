@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>登陆</title>
+	<link rel="stylesheet" href="./public/css/H-ui.reset.css">
+	<link rel="stylesheet" href="./public/css/toast.css">
+	<link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+	<div class="logo">
+		<img src="./images/logo.png" alt="">
+	</div>
+	<div class="login">
+		<div class="login_user">
+			<span>账号：</span>
+			<input class="username" type="text" placeholder="请输入账号">
+		</div>
+		<div class="login_user">
+			<span>密码：</span>
+			<input class="password" type="password" placeholder="请输入密码">
+		</div>
+		<div class="link">
+			<div>没有账号，现在注册>>></div>
+		</div>
+		<input id="login" class="login_btn" type="button" value="登录">
+	</div>
+	<div class="register">
+		<div class="login_user">
+			<span>账号：</span>
+			<input class="register_usnm" type="text" placeholder="请输入账号">
+		</div>
+		<div class="login_user">
+			<span>密码：</span>
+			<input class="register_pwd" type="password" placeholder="请输入密码">
+		</div>
+		<div class="auth_code">
+			<span>验证码：</span>
+			<input class="code_input" type="text">
+			<span class="code"></span>
+		</div>
+		<div class="return">点击返回登陆</div>
+		<input id="register" class="login_btn register_btn" type="button" value="注册">
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./public/js/rems.js"></script>
+<script src="./public/js/toast.js"></script>
+<script src="./js/login.js"></script>
+</html>

@@ -1,0 +1,83 @@
+html , body {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.logo {
+	padding-top: 1.4rem;
+	width: 100%;
+	text-align: center;
+}
+.logo img {
+	width: 6.6rem;
+	height: 6.6rem;
+	opacity: 0.75;
+}
+.login, .register {	
+	margin-left: 0.8rem;
+	margin-top: 2.2rem;
+	width: 17.15rem;
+	height: 16.45rem;
+	background-color: #dadada;
+	border: 0;
+	border-radius: 5px;
+}
+.login {
+    display: block;
+}
+.register {
+	display: none;
+}
+.login_user, .auth_code {
+	padding-top: 1.5rem;
+	color: #000;
+	font-size: 1rem;
+}
+.login_user input {
+	padding-left: 10px;
+	width: 11.55rem;
+	height: 1.9rem;
+	font-size: 1rem;
+}
+.link {
+    text-align: left;
+    margin-left: 0.8rem;
+}
+.link div {
+	font-size: 0.8rem;
+	line-height: 2.6rem;
+	color: #004eff;
+}
+.login_btn {
+	margin-top: 1.4rem;
+	width: 10rem;
+	height: 2.5rem;
+	background: #20b2aa;
+	border: 0;
+	font-size: 1.5rem;
+	letter-spacing: 0.5rem;
+}
+.code_input {
+	width: 6.2rem;
+	height: 1.9rem;
+}
+.code {
+	margin-right: 1rem;
+    display: block;
+    float: right;
+    width: 3.5rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    background: #eee;
+    color: #fe1414;
+}
+.return {
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+	font-size: 0.8rem;
+    color: #004eff;
+}
+.register_btn {
+	margin-top: 0.6rem;
+}
