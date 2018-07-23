@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> -->
+	<title>登录</title>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //Meta-Tags -->
+
+	<!-- Style -->
+	<link rel="stylesheet" href="./css/style.css" type="text/css" media="all">
+	<!-- <link rel="stylesheet" href="./public/css/H-ui.reset.css"> -->
+	<link rel="stylesheet" href="./public/css/toast.css">
+</head>
+<body>
+	<h1>登录</h1>
+	<div class="container w3layouts agileits">
+	  <div class="login w3layouts agileits">
+	    <h2>登 录</h2>
+	    <form action="#" method="post">
+	      <input type="text" Name="Userame" placeholder="用户名" required="" value="">
+	      <input type="password" Name="Password" placeholder="密码" required="">
+	    </form>
+	    <ul class="tick w3layouts agileits">
+	      <li>
+	        <input type="checkbox" id="brand1" value="">
+	        <label for="brand1"><span></span>记住我</label>
+	      </li>
+	    </ul>
+	    <div class="send-button w3layouts agileits">
+	      <form>
+	        <input type="submit" value="登 录">
+	      </form>
+	    </div>
+	    <a href="#">忘记密码?</a>
+	    <div class="social-icons w3layouts agileits">
+	      <p>- 其他方式登录 -</p>
+	      <ul>
+	        <li class="qq"><a href="#"> <span class="icons w3layouts agileits"></span> <span class="text w3layouts agileits">QQ</span></a></li>
+	        <li class="weixin w3ls"><a href="#"> <span class="icons w3layouts"></span> <span class="text w3layouts agileits">微信</span></a></li>
+	        <li class="weibo aits"><a href="#"> <span class="icons agileits"></span> <span class="text w3layouts agileits">微博</span></a></li>
+	        <div class="clear"> </div>
+	      </ul>
+	    </div>
+	    <div class="clear"></div>
+	  </div>
+	  <div class="register w3layouts agileits">
+	    <h2>注 册</h2>
+	    <form action="#" method="post">
+	      <input type="text" Name="Name" placeholder="用户名" required="" value="">
+	      <input type="text" Name="Email" placeholder="邮箱" required="" value="">
+	      <input type="password" Name="Password" placeholder="密码" required="">
+	      <input type="text" Name="Phone Number" placeholder="手机号码" required="">
+	    </form>
+	    <div class="send-button w3layouts agileits">
+	      <form>
+	        <input type="submit" value="免费注册">
+	      </form>
+	    </div>
+	    <div class="clear"></div>
+	  </div>
+	  <div class="clear"></div>
+	</div>
+	<div class="footer w3layouts agileits">
+	  <p>南&copy;</p>
+	</div>
+</body>
+</html>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+<script src="../jquery-1.8.3/jquery.min.js"></script>
+
+<!-- <script src="./public/js/rems.js"></script> -->
+<script src="./public/js/toast.js"></script>
+<script src="./js/lg.js"></script>
+<script>
+	// 判断是移动端还是pc，实现pc端翻转。
+	function goPAGE() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            /*window.location.href="你的手机版地址";*/
+            // alert("mobile")
+            return false;
+        }
+        else {
+            /*window.location.href="你的电脑版地址";    */
+            // alert("pc")
+            $(".social-icons li a").live("mouseover",function(){
+            		$(this).children('span.icons').css({
+            			"transform": "rotatey(360deg)",
+            			"-webkit-transform": "rotatey(360deg)",
+            			"-o-transform": "rotatey(360deg)",
+            			"-moz-transform": "rotatey(360deg)",
+            			"-ms-transform": "rotatey(360deg)",
+            			"transition": ".5s all"
+            		})
+            	});
+            $(".social-icons li a").live("mouseout",function(){
+            		$(this).children('span.icons').css({
+            			"transform": "rotatey(0deg)",
+            			"-webkit-transform": "rotatey(0deg)",
+            			"-o-transform": "rotatey(0deg)",
+            			"-moz-transform": "rotatey(0deg)",
+            			"-ms-transform": "rotatey(0deg)",
+            			"transition": ".5s all"
+            		})
+            	});
+        }
+    }
+    goPAGE();
+</script>
