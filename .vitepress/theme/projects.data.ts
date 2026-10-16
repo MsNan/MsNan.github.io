@@ -6,6 +6,9 @@ declare const data: Project[]
 export { data }
 
 const LIST = [
+  { repo: 'MsNan/md-multi-format', name: '多平台 Markdown 排版', icon: '🪄',
+    desc: '写一次 Markdown，一键复制到公众号（内联样式、外链转脚注）、知乎、掘金/CSDN（规范 Markdown），还能自动生成小红书 3:4 图文卡片并导出 PNG。纯本地，不自动发布。在线地址：msnan.github.io/md-multi-format',
+    tags: ['Markdown', '公众号', '小红书', 'Vue3'] },
   { repo: 'MsNan/prompt-hub-cn', name: '提示词百宝箱', icon: '🧰',
     desc: '66 条原创中文 Prompt 与 AI Agent 模板，覆盖编程、代码审查、产品、运营、求职、Cursor rules、Claude skills。在线搜索、填变量、一键复制、本地收藏。在线地址：msnan.github.io/prompt-hub-cn',
     tags: ['Prompt', 'AI Agent', 'Vue3'] },
