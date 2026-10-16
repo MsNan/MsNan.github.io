@@ -9,9 +9,13 @@ const groups = computed(() => {
 })
 </script>
 <template>
-  <div class="chips"><a v-for="[t, ps] in groups" :key="t" class="chip" :href="'#' + encodeURIComponent(t)"># {{ t }} <sup>{{ ps.length }}</sup></a></div>
-  <section v-for="[t, ps] in groups" :key="t">
+  <div class="chips" aria-label="筛选"><a v-for="[t, ps] in groups" :key="t" class="chip" :href="'#' + encodeURIComponent(t)"># {{ t }} <sup>{{ ps.length }}</sup></a></div>
+  <section class="group" v-for="[t, ps] in groups" :key="t">
     <h2 :id="t"># {{ t }}</h2>
-    <PostCard v-for="p in ps" :key="p.url" :post="p" />
+    <div class="card-grid"><PostCard v-for="p in ps" :key="p.url" :post="p" /></div>
   </section>
 </template>
+<style scoped>
+.group { margin-top: 44px; }
+.group h2 { font-size: 22px; font-weight: 750; margin: 0 0 18px; border: 0; padding: 0; scroll-margin-top: 90px; }
+</style>

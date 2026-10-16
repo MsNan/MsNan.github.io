@@ -7,6 +7,9 @@ import PostList from './components/PostList.vue'
 import Categories from './components/Categories.vue'
 import Tags from './components/Tags.vue'
 import Archive from './components/Archive.vue'
+import Home from './components/Home.vue'
+import PageHeader from './components/PageHeader.vue'
+import ProjectCards from './components/ProjectCards.vue'
 import NotFound from './components/NotFound.vue'
 import './style.css'
 
@@ -24,5 +27,8 @@ export default {
     app.component('Categories', Categories)
     app.component('Tags', Tags)
     app.component('Archive', Archive)
+    app.component('Home', Home)
+    app.component('PageHeader', PageHeader)
+    app.component('ProjectCards', ProjectCards)
   }
 } satisfies Theme

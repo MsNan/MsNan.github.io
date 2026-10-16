@@ -45,15 +45,20 @@ export default defineConfig({
     }
   },
   buildEnd: genFeed,
+  vite: {
+    build: { sourcemap: false, minify: 'esbuild', cssMinify: true }
+  },
   themeConfig: {
     logo: '/favicon.svg',
     siteTitle: '程序员项目库',
     nav: [
       { text: '首页', link: '/' },
       { text: '文章', link: '/posts/', activeMatch: '/posts/' },
-      { text: '分类', link: '/categories' },
-      { text: '标签', link: '/tags' },
-      { text: '归档', link: '/archive' },
+      { text: '浏览', items: [
+        { text: '分类', link: '/categories' },
+        { text: '标签', link: '/tags' },
+        { text: '归档', link: '/archive' }
+      ] },
       { text: '项目', link: '/projects' },
       { text: '关于', link: '/about' },
       { text: '☕ 打赏', link: '/donate' }
