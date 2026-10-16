@@ -6,6 +6,9 @@ declare const data: Project[]
 export { data }
 
 const LIST = [
+  { repo: 'MsNan/prompt-hub-cn', name: '提示词百宝箱', icon: '🧰',
+    desc: '66 条原创中文 Prompt 与 AI Agent 模板，覆盖编程、代码审查、产品、运营、求职、Cursor rules、Claude skills。在线搜索、填变量、一键复制、本地收藏。在线地址：msnan.github.io/prompt-hub-cn',
+    tags: ['Prompt', 'AI Agent', 'Vue3'] },
   { repo: 'MsNan/bishe-kit', name: '毕设/接单全栈脚手架', icon: '🎓',
     desc: 'Vue3 + Element Plus 后台、uni-app 用户端（H5/小程序）、Express + SQLite 零配置。JWT 双端登录、RBAC、一条命令生成 CRUD 模块，附 AI 提示词包。只提供源码，不代写论文。',
     tags: ['Vue3', 'uni-app', 'Express'] },
