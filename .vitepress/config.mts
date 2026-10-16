@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { genFeed } from './genFeed'
+import { SOCIALS, ICONS } from './socials'
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -64,8 +65,8 @@ export default defineConfig({
       { text: '☕ 打赏', link: '/donate' }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/MsNan' },
-      { icon: { svg: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M6.18 15.64a2.18 2.18 0 1 1 0 4.36 2.18 2.18 0 0 1 0-4.36zM4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>' }, link: '/rss', ariaLabel: 'RSS 订阅' }
+      ...SOCIALS.map((x) => ({ icon: { svg: ICONS[x.key] }, link: x.link, ariaLabel: `${x.name}：${x.handle}` })),
+      { icon: { svg: ICONS.rss }, link: '/rss', ariaLabel: 'RSS 订阅' }
     ],
     search: {
       provider: 'local',
@@ -97,7 +98,10 @@ export default defineConfig({
     returnToTopLabel: '回到顶部',
     lastUpdated: { text: '最后更新' },
     footer: {
-      message: '本站文章与源码仅供学习参考 · <a href="/rss">RSS 订阅</a>',
+      message: [
+        ...SOCIALS.map((x) => `<a href="${x.link}" target="_blank" rel="noopener">${x.name}${x.key === 'wechat' ? '「' + x.handle + '」' : ''}</a>`),
+        '<a href="/rss">RSS 订阅</a>'
+      ].join(' · ') + '<br>本站文章与源码仅供学习参考',
       copyright: '© 2018-present 涛哥 · 程序员项目库'
     }
   }

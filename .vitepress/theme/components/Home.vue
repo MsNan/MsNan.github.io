@@ -2,6 +2,7 @@
 import { withBase } from 'vitepress'
 import PostList from './PostList.vue'
 import ProjectCards from './ProjectCards.vue'
+import SocialLinks from './SocialLinks.vue'
 import { data as posts } from '../posts.data'
 </script>
 <template>
@@ -42,8 +43,8 @@ import { data as posts } from '../posts.data'
 
     <section class="section">
       <div class="subscribe">
-        <div><h2>订阅更新</h2><p>用 RSS 订阅，或在 GitHub 上关注我，有新文章和项目第一时间知道。</p></div>
-        <div class="cta"><a class="btn primary" :href="withBase('/rss')">RSS 订阅</a><a class="btn ghost" href="https://github.com/MsNan" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="sub-text"><h2>订阅更新</h2><p>用 RSS 订阅，或在下面任一平台关注我；公众号请在微信搜索「程序员项目库」。</p><SocialLinks variant="pills" class="sub-soc" /></div>
+        <div class="cta"><a class="btn primary" :href="withBase('/rss')">RSS 订阅</a><a class="btn ghost" :href="withBase('/about#找到我')">更多联系方式</a></div>
       </div>
     </section>
   </div>
@@ -87,6 +88,8 @@ h1 { margin: 0; font-size: clamp(30px, 5vw, 52px); line-height: 1.22; font-weigh
 .subscribe h2 { margin: 0 0 6px; font-size: 22px; }
 .subscribe p { margin: 0; color: var(--vp-c-text-2); }
 .subscribe .cta { margin-top: 0; }
+.sub-text { flex: 1; min-width: 260px; }
+.sub-soc { margin-top: 16px; }
 @media (max-width: 960px) { .hero-inner { grid-template-columns: 1fr; } .avatar-wrap { width: 240px; height: 240px; order: -1; } }
 @media (max-width: 640px) {
   .hero { padding: 40px 20px 44px; } .section { padding: 44px 20px 0; }

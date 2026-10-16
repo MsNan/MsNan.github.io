@@ -11,6 +11,7 @@ import Home from './components/Home.vue'
 import PageHeader from './components/PageHeader.vue'
 import ProjectCards from './components/ProjectCards.vue'
 import RssBox from './components/RssBox.vue'
+import SocialLinks from './components/SocialLinks.vue'
 import NotFound from './components/NotFound.vue'
 import './style.css'
 
@@ -29,6 +30,7 @@ export default {
     app.component('Tags', Tags)
     app.component('Archive', Archive)
     app.component('Home', Home)
+    app.component('SocialLinks', SocialLinks)
     app.component('RssBox', RssBox)
     app.component('PageHeader', PageHeader)
     app.component('ProjectCards', ProjectCards)
