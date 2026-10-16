@@ -6,6 +6,9 @@ declare const data: Project[]
 export { data }
 
 const LIST = [
+  { repo: 'MsNan/bishe-kit', name: '毕设/接单全栈脚手架', icon: '🎓',
+    desc: 'Vue3 + Element Plus 后台、uni-app 用户端（H5/小程序）、Express + SQLite 零配置。JWT 双端登录、RBAC、一条命令生成 CRUD 模块，附 AI 提示词包。只提供源码，不代写论文。',
+    tags: ['Vue3', 'uni-app', 'Express'] },
   { repo: 'MsNan/cn-dev-mcp', name: '中国开发者 MCP 工具集', icon: '🧰',
     desc: '13 个离线 MCP 工具：节假日调休、工作日计算、身份证/信用代码/手机号格式校验、拼音、农历、行政区划、uni-app/小程序/Element Plus/Vant 文档速查。npx 一行接入 Cursor / Claude / Trae。',
     tags: ['MCP', 'AI', 'Node.js'] },
