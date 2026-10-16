@@ -18,7 +18,7 @@ const LIST = [
   { repo: 'MsNan/cn-dev-mcp', name: '中国开发者 MCP 工具集', icon: '🧰',
     desc: '13 个离线 MCP 工具：节假日调休、工作日计算、身份证/信用代码/手机号格式校验、拼音、农历、行政区划、uni-app/小程序/Element Plus/Vant 文档速查。npx 一行接入 Cursor / Claude / Trae。',
     tags: ['MCP', 'AI', 'Node.js'] },
-  { repo: 'MsNan/vue-uniapp-skills', name: 'Vue3 + uni-app AI 技能包', icon: '🧠',
+  { repo: 'MsNan/vue-uniapp-skills', name: 'Vue3 + uni-app AI 技能包', icon: '🧠', post: '/posts/vue-uniapp-skills',
     desc: '12 个中文 AI 编程技能：跨端条件编译、分包、登录、支付、401 请求封装、Pinia、发版审核清单。一行 npx 装进 Cursor / Claude Code / Trae / Codex。',
     tags: ['AI Skills', 'uni-app', 'Cursor'] },
   { repo: 'MsNan/taohaowu-shop', name: '淘好物商城', icon: '🛒', post: '/posts/uni-app-mall-from-0-to-1',
