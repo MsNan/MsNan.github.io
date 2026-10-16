@@ -6,6 +6,9 @@ declare const data: Project[]
 export { data }
 
 const LIST = [
+  { repo: 'MsNan/vue-uniapp-skills', name: 'Vue3 + uni-app AI 技能包', icon: '🧠',
+    desc: '12 个中文 AI 编程技能：跨端条件编译、分包、登录、支付、401 请求封装、Pinia、发版审核清单。一行 npx 装进 Cursor / Claude Code / Trae / Codex。',
+    tags: ['AI Skills', 'uni-app', 'Cursor'] },
   { repo: 'MsNan/taohaowu-shop', name: '淘好物商城', icon: '🛒', post: '/posts/uni-app-mall-from-0-to-1',
     desc: 'uni-app（Vue 3 + Pinia）+ Express 全栈商城，一套代码跑 H5 / 小程序 / App，自带 /admin 管理后台与 JWT 双角色鉴权。',
     tags: ['uni-app', 'Vue3', 'Express'] },
