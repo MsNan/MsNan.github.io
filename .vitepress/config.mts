@@ -65,8 +65,9 @@ export default defineConfig({
       { text: '☕ 打赏', link: '/donate' }
     ],
     socialLinks: [
-      ...SOCIALS.map((x) => ({ icon: { svg: ICONS[x.key] }, link: x.link, ariaLabel: `${x.name}：${x.handle}` })),
-      { icon: { svg: ICONS.rss }, link: '/rss', ariaLabel: 'RSS 订阅' }
+      ...SOCIALS.filter((x) => x.nav).map((x) => ({ icon: { svg: ICONS[x.key] }, link: x.link, ariaLabel: `${x.name}：${x.handle}` })),
+      { icon: { svg: ICONS.rss }, link: '/rss', ariaLabel: 'RSS 订阅' },
+      { icon: { svg: ICONS.more }, link: '/about#找到我', ariaLabel: '更多社交账号' }
     ],
     search: {
       provider: 'local',
