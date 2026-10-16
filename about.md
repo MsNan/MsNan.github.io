@@ -31,4 +31,4 @@ aside: false
 
 ## 关于本站
 
-本站用 [VitePress](https://vitepress.dev) 搭建，部署在 GitHub Pages，支持全文搜索、深色模式和 [RSS 订阅](/feed.xml)。文章和源码仅供学习参考。
+本站用 [VitePress](https://vitepress.dev) 搭建，部署在 GitHub Pages，支持全文搜索、深色模式和 [RSS 订阅](/rss)。文章和源码仅供学习参考。

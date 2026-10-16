@@ -27,5 +27,6 @@ export async function genFeed(config: SiteConfig) {
         date: new Date(frontmatter.date)
       })
     })
-  writeFileSync(path.join(config.outDir, 'feed.xml'), feed.rss2())
+  const xml = feed.rss2().replace(/^<\?xml[^>]*\?>/, (m) => `${m}\n<?xml-stylesheet type="text/xsl" href="/feed.xsl"?>`)
+  writeFileSync(path.join(config.outDir, 'feed.xml'), xml)
 }

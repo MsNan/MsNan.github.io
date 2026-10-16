@@ -65,7 +65,7 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MsNan' },
-      { icon: { svg: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M6.18 15.64a2.18 2.18 0 1 1 0 4.36 2.18 2.18 0 0 1 0-4.36zM4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>' }, link: '/feed.xml', ariaLabel: 'RSS' }
+      { icon: { svg: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M6.18 15.64a2.18 2.18 0 1 1 0 4.36 2.18 2.18 0 0 1 0-4.36zM4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"/></svg>' }, link: '/rss', ariaLabel: 'RSS 订阅' }
     ],
     search: {
       provider: 'local',
@@ -97,7 +97,7 @@ export default defineConfig({
     returnToTopLabel: '回到顶部',
     lastUpdated: { text: '最后更新' },
     footer: {
-      message: '本站文章与源码仅供学习参考 · <a href="/feed.xml">RSS</a>',
+      message: '本站文章与源码仅供学习参考 · <a href="/rss">RSS 订阅</a>',
       copyright: '© 2018-present 涛哥 · 程序员项目库'
     }
   }

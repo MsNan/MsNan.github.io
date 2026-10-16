@@ -43,7 +43,7 @@ import { data as posts } from '../posts.data'
     <section class="section">
       <div class="subscribe">
         <div><h2>订阅更新</h2><p>用 RSS 订阅，或在 GitHub 上关注我，有新文章和项目第一时间知道。</p></div>
-        <div class="cta"><a class="btn primary" :href="withBase('/feed.xml')">RSS 订阅</a><a class="btn ghost" href="https://github.com/MsNan" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="cta"><a class="btn primary" :href="withBase('/rss')">RSS 订阅</a><a class="btn ghost" href="https://github.com/MsNan" target="_blank" rel="noopener">GitHub ↗</a></div>
       </div>
     </section>
   </div>
