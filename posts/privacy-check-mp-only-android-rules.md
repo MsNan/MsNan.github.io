@@ -65,7 +65,7 @@ P1 引用的来源是 DCloud 的《Android平台隐私与政策提示框配置�
 
 ## 另外一处：链接其实写了，却报没有
 
-给一个确有 `app-plus` 的项目配上 `androidPrivacy.json`，`prompt` 为 `template`，`message` 里放了「请阅读 <a href=https://example.com/privacy.html>《隐私政策》</a>」，也就是 href 没加引号。分析器报了 P4 MEDIUM：「message 中没有《隐私政策》链接 (<a href>)」。把引号换成中文弯引号 `“...”`，还是同样一条。改成普通的英文双引号后，这条 P4 就消失了。
+给一个确有 `app-plus` 的项目配上 `androidPrivacy.json`，`prompt` 为 `template`，`message` 里放了「请阅读 `<a href=https://example.com/privacy.html>《隐私政策》</a>`」，也就是 href 没加引号。分析器报了 P4 MEDIUM：「message 中没有《隐私政策》链接 (`<a href>`)」。把引号换成中文弯引号 `“...”`，还是同样一条。改成普通的英文双引号后，这条 P4 就消失了。
 
 原因在提取 href 的正则：它只认单引号或双引号包起来的值，可选地容忍一个反斜杠，未加引号和弯引号都进不去。HTML 里未加引号的 URL 很常见，从富文本编辑器贴过来时，弯引号也偶尔会出现。链接其实在，扫描结果却说没有。
 
